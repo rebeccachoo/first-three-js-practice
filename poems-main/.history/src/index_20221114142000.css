@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Sofia";
+  src: url("sofiapro-light.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Sofia";
+  background-color: #001829;
+}
+
+#topBox {
+  background-image: url("img/symbol-scatter-haikei.svg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: 100%;
+
+  background-position: center center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+}
+input:focus,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
+  outline: none;
+}

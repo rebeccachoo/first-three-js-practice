@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Sofia";
+  src: url("sofiapro-light.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Sofia";
+  background-color: #001829;
+}
+
+#topBox {
+  background-image: url("img/symbol-scatter-haikei.svg");
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+
+  background-position: center center;
+  background-repeat: repeat-y;
+  height: auto !important;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+}
+input:focus,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
+  outline: none;
+}
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}

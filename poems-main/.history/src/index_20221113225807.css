@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Sofia";
+  src: url("sofiapro-light.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  background-image: url("img/wave-haikei.svg");
+  background-size: 100%;
+  color: white;
+  font-family: "Sofia";
+  background-color: #0065ff;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+}
+input:focus,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
+  outline: none;
+}
