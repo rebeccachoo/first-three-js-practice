@@ -20,6 +20,7 @@ const Layout = () => {
               item
               md={8}
               sm={12}
+              xs={12}
               sx={{
                 fontSize: "22px",
                 p: 3,
@@ -54,10 +55,12 @@ const Layout = () => {
               item
               md={4}
               sm={12}
+              xs={12}
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-around",
+                pb: { md: 0, sm: 4, xs: 4 },
               }}
             >
               <Box>

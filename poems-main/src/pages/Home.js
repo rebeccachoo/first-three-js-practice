@@ -187,7 +187,14 @@ function Example() {
           <Adsense client="ca-pub-5758073926608836" slot="8237564231" />
 
           <Box container sx={{ minWidth: "700px" }}>
-            <Box sx={{ pb: 2, pt: 4, textAlign: "center" }}>
+            <Box
+              sx={{
+                pb: 2,
+                pt: 4,
+                textAlign: "center",
+                pt: { md: 2, xs: 5, sm: 5 },
+              }}
+            >
               Search a poem with author, title, or any words.
             </Box>
 
