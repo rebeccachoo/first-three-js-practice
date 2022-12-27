@@ -230,7 +230,18 @@ function Example() {
                   </Select>
                 </FormControl>
               </Grid>
-              <Grid item md={7} sm={12} xs={12}>
+              <Grid
+                item
+                md={7}
+                sm={12}
+                xs={12}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  // border: "1px solid red",
+                  pt: { md: 0, sm: 1, xs: 1 },
+                }}
+              >
                 <TextField
                   autoFocus
                   value={value}
@@ -239,23 +250,32 @@ function Example() {
                   onKeyDown={(event) => handleTextFieldChange(event)}
                   sx={{
                     backgroundColor: "white",
-                    // borderRadius: "20px",
-                    width: "100%",
+                    // borderRadius: "20px"
+                    width: { md: "100%", sm: "300px", xs: "300px" },
                     outline: "none",
                     "& fieldset": { border: "none" },
                   }}
                 />
               </Grid>
 
-              <Grid item md={2} sm={12} xs={12}>
+              <Grid
+                item
+                md={2}
+                sm={12}
+                xs={12}
+                sx={{
+                  display: "flex",
+                  justifyContent: { sm: "center", xs: "center", md: "start" },
+                  // border: "1px solid red",
+                  pt: { md: 0, sm: 1, xs: 1 },
+                }}
+              >
                 <button
                   style={{
                     cursor: "pointer",
-                    width: "100%",
+                    width: { md: "100%", sm: "300px", xs: "300px" },
                     height: "100%",
                     textAlign: "center",
-                    position: "relative",
-                    left: "-10px",
                   }}
                   onClick={search}
                 >
@@ -273,7 +293,7 @@ function Example() {
           flexDirection: "column",
           alignItems: "center",
           fontSize: "14px",
-          pt: 3,
+          mt: { md: 7, xs: 14, sm: 14 },
         }}
       >
         {loading ? (
